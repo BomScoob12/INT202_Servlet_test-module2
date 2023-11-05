@@ -13,10 +13,10 @@
 </head>
 <body>
 <h1>Sarawit Kraukham 65130500083</h1>
-<c:forEach items="${sessionScope.history.getCheckedNumber()}" var="i" varStatus="ct">
+<c:forEach items="${number}" var="i" varStatus="ct">
     <tr>
         <td>${i.getNumber()}</td>
-        <td>${i.getIsPrime()}</td>
+        <td>${i.isPrime()}</td>
     </tr>
 </c:forEach>
 </body>

@@ -25,7 +25,12 @@ public class PrimeNumberServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int number = Integer.parseInt(req.getParameter("number"));
         HttpSession session = req.getSession(false);
-        HistoryNumber historyNumber = new HistoryNumber();
+        HistoryNumber historyNumber;
+        if(session.getAttribute("history") == null) {
+             historyNumber = new HistoryNumber();
+        } else {
+            historyNumber = (HistoryNumber) session.getAttribute("history");
+        }
         NumberCheck numberCheck;
         if (number < 0) {
             req.setAttribute("errMsg", number + "is invalid input!!!");

@@ -7,6 +7,6 @@
 <body>
 <h1>Sarawit Kraukham 65130500083</h1>
 <a href="083/register">register</a>
-<a href="displayHistory.jsp">History check prime</a>
+<a href="083/history-prime">History check prime</a>
 </body>
 </html>

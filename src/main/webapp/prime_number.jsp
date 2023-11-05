@@ -44,5 +44,7 @@
         </div>
     </c:if>
 </div>
+<div><a href="./history-prime">Check history</a></div>
+<div><a href="../index.jsp">Back to index</a></div>
 </body>
 </html>
